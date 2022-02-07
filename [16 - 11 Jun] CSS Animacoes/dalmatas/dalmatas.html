@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>CSS</title>
+		<style>
+			body {
+				background-color:lightblue;
+			}
+			#ambiente {
+				width:950px;
+				height:600px;
+				background:url(imgs/cidade1.png);
+				border:1px solid red;
+			}
+			#dalmata {
+				position:relative;
+				top:500px;
+				animation-name: corrida;
+				animation-duration: 15s;
+				animation-fill-mode: forwards;
+			}
+			@keyframes corrida {
+			  from {left: 0px;top:430px;width:80px;}
+			  to {left: 110%;top:500px;width:300px;}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="ambiente">
+			<img id="dalmata" src="imgs/dalmata.gif">
+		</div>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+body {background-color:silver;}
+.caixa {
+	width:100px;
+	height:100px;
+	border:2px solid black;
+	float:left;
+	margin:20px;
+	background-color:pink;
+}
+#d1{
+	border: 2px solid navy;
+	border-radius: 15px;
+}
+#d2{
+	border: 2px dotted red;
+	border-radius: 25px;
+}
+#d3{
+	border: 2px dashed yellow;
+	border-radius: 50px;
+}
+#d4{
+	border: 2px ridge fuchsia;
+	border-radius: 50px 10px 20px 30px;
+}

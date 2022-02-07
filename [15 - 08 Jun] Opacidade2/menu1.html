@@ -1,0 +1,193 @@
+<html> <!-- salvar como menu1.html -->
+	<head>
+		<title>Menu CSS</title>
+		<style>
+			body {
+				background:url(imgs/fundos/gato.jpg);
+				background-size:cover;
+				margin:0px;
+				font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+			}
+			
+			#faixa {
+				background-color:black;
+				height:25px;
+				text-align:right;
+				padding:10px 15px 15px 0px;
+				margin-bottom:20px;
+			}
+			#faixa a {
+				color:rgb(0, 176, 240);
+				font-size:22px;
+				margin-bottom:10px;
+			}
+			#central {
+				width:1024px;
+				height:550px;
+				margin:0px auto;
+			}
+			#rodape {
+				height:30px;
+				background-color:rgb(68, 114, 196);
+				border:2px solid black;
+				padding-left:5px;
+				margin-top:20px;
+			}
+			#menu {
+				background-color:lightgreen;
+				list-style:none;
+				padding:0px;
+				margin:0px;
+			}
+			#conteudo {
+				clear:both;
+				height:500px;
+			}
+			#menu li {
+				background-color:silver;
+				height:50px;
+				width:182.8px;
+				border:1px solid black;
+				float:left;
+				margin: 0px 10px 0px 10px;
+			}
+			#menu a:link {
+				color:white;
+				background:rgb(91, 155, 213) url(imgs/hamster.png) no-repeat 5px;
+				background-size:15%;
+				font-size:22px;
+				text-decoration:none;
+				height:35px;
+				width:182.8px;
+				display:block;
+				text-align:center;
+				padding-top:15px;
+			}
+			#menu a:visited {
+				color:red;
+				background-color:silver;
+			}
+			#menu a:hover {
+				color : black;
+				background:orange url(imgs/hamster.png) no-repeat right;
+				background-size:15%;
+			}
+			#menu a:active {
+				color:yellow;
+				background-color:black;
+			}
+			
+			#banho {
+				width:550px;
+				height:160px;
+				border:1px solid black;
+				background:white url(imgs/pets.png) no-repeat 10px 10px;
+				background-size:130px;
+				font-size:18px;
+				padding-left: 150px;
+				margin-bottom:20px;
+				/*
+				largura
+				altura
+				borda preta
+				fundo branco
+				imagem de fundo
+				*/
+			}
+			#banho h3 {	text-align:center; }
+			.caixas {
+				border:1px solid black;
+				width:200px;
+				height:250px;
+				background:rgba(255,255,255,.3);
+				padding:5px;
+				float:left;
+				margin-right:20px;
+			}
+			#treinamento {
+				background:rgba(255,255,255,.3) url(imgs/treinamento.png) no-repeat 15px 10px;
+				width:350px;
+				height:120px;
+				padding-left:120px;
+			}
+			.caixas h3 {
+				text-align:center;
+				color:navy;
+				font-size:20px;
+			}
+			.caixas:hover{
+				background:rgba(0,0,0,.3);
+			}
+			#banho:hover {
+				background:rgba(0,0,0,0.5) url(imgs/pets.png) no-repeat 10px 10px;
+				background-size:130px;
+			}
+			#treinamento:hover {
+				background:rgba(0,0,120,.3) url(imgs/treinamento.png) no-repeat 15px 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="faixa">
+			<a href="login.html">Login</a>
+		</div>
+		
+		<div id="central">
+			<div id="areaMenu">
+				<ul id="menu">
+					<li><a href="empresa.html">A Empresa</a> </li>
+					<li><a href="produtos.html">Produtos</a></li>
+					<li><a href="servicos.html">Serviços</a></li>
+					<li><a href="contato.html">Fale Conosco</a></li>
+					<li><a href="sac.html">Suporte</a></li>
+				</ul>
+			</div>
+			<p>&nbsp;</p>
+			
+			<div id="conteudo">
+			
+				<div id="banho">
+					<h3>BANHO & TOSA</h3>
+					O banho é um momento importante para a saúde e 
+					higiene dos pets. Ao se tornar um hábito, reduz o 
+					stress no pet. Banho, tosa, limpeza das orelhas, 
+					higiene bucal e corte das unhas são rotinas feitas 
+					regularmente por nossos profissionais capacitados.
+					<a href="banho.html">Conheça nosso trabalho</a>
+				</div>
+				
+				<div class="caixas" id="transporte">
+					<h3>PET TRANSPORT</h3>
+					<img src="imgs/van.png"> <br>
+					Nossa <b>PETVAN</b> pega seus pets em sua casa e devolve-os 
+					em segurança.
+					<br><br>
+					<a href="transporte.html">Clique para detalhes</a>
+				</div>
+				
+				<div class="caixas" id="servicos">
+					<h3>SERVIÇOS ESPECIAIS</h3>
+					Traga seu pet para a corrida maluca. 
+					Prêmios para os 3 primeiros colocados.
+					<br><br>
+					<img src="imgs/coelho.png">
+					<img src="imgs/tartaruga.png">
+					<img src="imgs/cat (2).png">
+					<br><br>
+					<a href="servicos.html">Participe!!</a>
+				</div>
+				
+				<div class="caixas" id="treinamento">
+					<h3>TREINAMENTO</h3>
+					Treinamos seu cachorro a obedecer seus comandos.<br>
+					<a href="treinamento.html">Saiba Mais</a>
+				</div>
+			</div>
+			
+		</div>
+		<p>&nbsp;</p>
+		<div id="rodape">
+			Contato: <a href="mailto:pets@site.com.br">pets@site.com.br</a>
+		</div>
+	</body>
+</html>

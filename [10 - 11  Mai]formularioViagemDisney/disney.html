@@ -1,0 +1,139 @@
+<html> <!-- salvar como disney.html -->
+	<head>
+	   <title>Agendamento Disney World</title>
+	   <!-- arquivo externo estilos.css -->
+		<style>
+			/* salvar como estilos.css (comentário CSS) */
+
+body {
+	background:url(imgs/fundo.jpg);
+	color:navy;
+	font-family:Comic Sans MS;
+}
+
+#areaInformacoes {
+	background-color:silver;
+	width:800px;
+	margin:0px auto;
+	border: 20px groove fuchsia;
+	text-align:center;
+}
+
+#formDisney {
+	border:5px ridge yellow;
+	margin:5px;
+	padding:5px;
+	text-align:left;
+}
+
+input, select,textarea  {
+	background-color:rgb(173,216,230);
+}
+		</style>
+	</head>
+	
+	<body>
+	  <div id="areaInformacoes">
+		<h1>Agendamento de Atividade-Disney World</h1>
+		<form	action="agendaDisney.php"
+				method="post"
+				id="formDisney"
+				enctype="multipart/form-data">
+			RESORT:
+			<input	type="text"
+					name="resort"
+					value="Disney World Orlando"
+					readonly>
+			- Senha:
+			<input	type="password"
+					maxlength="10"
+					name="senha">
+			<hr>
+			Nome do responsável:
+			<input	type="text"
+					name="responsavel"
+					required
+					maxlength="80"
+			placeholder="Informe o nome completo"
+					size="80">
+			<br>
+			Origem:
+			<select name="origem">
+				<option value="AR">Argentina</option>
+				<option value="BR">Brasil</option>
+				<option value="EUA" selected>Estados Unidos</option>
+				<option value="FR">França</option>
+			</select>
+			<br>
+			
+			Nº de familiares (incluindo crianças):
+			<input	type="number"
+					name="familiares"
+					min="1"
+					max="20">
+			<fieldset>
+				<legend>Sexo</legend>
+				<input  type="radio"
+						value="M"
+						name="sexo"> Masculino
+						
+				<input 	type="radio"
+						value="F"
+						checked
+						name="sexo"> Feminino
+			</fieldset>
+			
+			e-mail:
+			<input	type="email"
+					maxlength="100"
+					size="80"
+					name="email">
+					
+			<br>
+			<input  type="checkbox"
+					value="S"
+					checked
+					name="recEmails">
+			Quero receber e-mails
+			<h3>Acesso ao Parque</h3>
+			Data da visita:
+			<input	type="date"
+					name="dataVisita"
+					value="2020-05-12"
+					min="2020-05-11"
+					max="2022-12-31">
+			- Horário da Visita:
+			<input	type="time"
+					name="horarioVisita"
+					value="10:00"
+					min="10:00"
+					max="20:00">
+			<br>
+			Cor da Pulseira:
+			<input	type="color"
+					name="pulseira"
+					value="#800080">
+			<br>
+			Número de atrações a visitar:<br> 
+			1 <input 	type="range" 
+					name="atracoes"
+					min="1"
+					value="3"
+					max="10"> 10
+			<br>
+			Foto da Família:
+			<input	type="file"	
+					name="fotoFamilia">
+			<h3>Preferências de Comida</h3>
+			<textarea	name="comida"
+						rows="3"
+			placeholder="informe suas preferências"
+						cols="80"></textarea>
+			
+			<hr>
+			<input type="submit" value="Enviar Dados">
+			<input type="reset" value="Limpar Campos">			
+		</form>
+	  </div>
+	</body>
+</html>

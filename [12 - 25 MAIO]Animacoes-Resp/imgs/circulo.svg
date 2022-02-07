@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+    "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+     width="400px" height="200px"
+     viewBox="0 0 400 200"
+     zoomAndPan="disable" >
+      
+     <circle cx="100" cy="50" r="0" fill="red">
+		<animate attributeType="r" attributeName="r" 
+           from="0" to="50" dur="5s" repeatCount="indefinite" />
+	 </circle>
+	 
+	 <rect x="250" y="50" width="100" height="30"  fill="yellow">
+		<animate attributeType="fill" attributeName="fill" 
+           from="yellow" to="blue" dur="5s" repeatCount="indefinite" />
+		<animate attributeType="x" attributeName="x" 
+           from="250" to="500" dur="10s" repeatCount="indefinite" />
+	 </rect>
+	 
+</svg>

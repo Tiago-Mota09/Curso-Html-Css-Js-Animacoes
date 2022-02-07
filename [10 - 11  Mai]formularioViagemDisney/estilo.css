@@ -1,0 +1,29 @@
+/* salvar como estilos.css (comentário CSS) */
+
+body {
+	background:url(imgs/fundo.jpg);
+	color: navy;
+	font-family:Comic Sans MS;
+}
+
+#areaInformacoes {
+	background-color:silver;
+	width:800px;
+	margin:0px auto;
+	border: 20px groove fuchsia;
+	text-align:center;
+}
+
+#formDisney {
+	border:5px ridge yellow;
+	margin:5px;
+	padding:5px;
+	text-align:left;
+}
+
+input, select, textarea {
+		background-color: rgb(173, 216, 230)
+		
+}
+
+

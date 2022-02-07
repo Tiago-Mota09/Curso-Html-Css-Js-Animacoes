@@ -1,0 +1,53 @@
+<html> <!-- salvar como fonte.html -->
+	<head>
+		<title>CSS</title>
+
+		<style>
+			body {
+				background:black;
+				font-family:Kicker Trial Black;
+				color:yellow;
+				font-size:60px;
+			}
+			
+			@font-face {
+				font-family:Kicker Trial Black;
+				src:url('fonts/KickerTrial-Black.ttf') format('truetype');
+				font-weight: normal;
+				font-style: normal;
+			}
+			#ambiente {
+				position:relative;
+				width:1200px;
+				height:220px;
+				background:url(imgs/dWeb.png),url(imgs/fundo.jpg);
+				background-repeat:no-repeat;
+				background-position:center center;
+				animation: passear 10s ;
+				animation-fill-mode:forwards;
+			}
+			@keyframes passear {
+				from {
+					left:50%;
+					top:50%;
+					width:150px;
+					height:20px;
+					background-position: left top;
+				}
+				to {
+					left:0px;
+					top:0px;
+					width:1200px;
+					height:220px;
+					background-position: center bottom;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="ambiente">
+			
+		</div>
+		<p id="p1">Desenvolvimento de aplicações para internet.</p>
+	</body>
+</html>

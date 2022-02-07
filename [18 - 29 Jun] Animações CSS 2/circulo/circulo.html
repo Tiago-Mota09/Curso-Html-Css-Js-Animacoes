@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- salvar como circulo.html -->
+<html>
+	<head>
+		<style>
+		.circulo {
+			position:relative;
+			width:45px;
+			height:45px;
+			border-size:8px;
+			border:2px ridge black;
+			border-left-color:red;
+			border-top-color:red;
+			border-right-color:blue;
+			border-bottom-color:blue;
+			border-radius:50%;
+			animation-name:deslocar;
+			animation-duration:20s;
+			animation-fill-mode: forwards;
+		}		
+		@keyframes deslocar {
+			0%{
+				transform:	 rotate(0deg);
+				background-color:white;
+				left:0px;
+				top:0px;
+			}
+			20%{
+				transform:	 rotate(90deg);
+				background-color:red;
+				left:100px;
+				top:0px;
+			}
+			40%{
+				transform:	 rotate(90deg);
+				background-color:green;
+				left:100px;
+				top:150px;
+			}
+			60%{
+				transform:	 rotate(180deg);
+				background-color:blue;
+				left:200px;
+				top:150px;
+			}
+			80%{
+				transform:	 rotate(180deg);
+				background-color:pink;
+				left:200px;
+				top:300px;
+			}
+			100%{
+				transform:	 rotate(360deg);
+				background-color:cyan;
+				left:400px;
+				top:30px;
+			}
+		}
+		#d2 {
+			position:relative;
+			width:45px;
+			height:45px;
+			border:8px solid blue;
+			background-color:gray;
+			border-left-color:red;
+			border-top-color:green;
+			border-right-color:blue;
+			border-bottom-color:pink;	
+			border-radius:50%;
+			animation: giragira 20s infinite;
+			background:url(ancora.png) no-repeat center center;
+			background-size:70%;
+		}
+		
+		@keyframes giragira {
+			from { 
+				transform:rotate(0deg);
+				background-color:yellow;
+			}
+			
+			to {
+					transform:rotate(360deg);
+					background-color:cyan;
+				}
+		}
+		</style>
+	</head>
+
+	<body>
+		<div class="circulo">
+			
+		</div>
+		
+		<hr>
+		
+		<div id="d2">
+		</div>
+
+	</body>
+</html>

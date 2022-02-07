@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>CSS</title>
+		<style>
+			body {
+				background-color:lightblue;
+			}
+			#ambiente {
+				width:500px;
+				height:455px;
+				background:url(imgs/cidade3.png);
+				background-blend-mode:normal;
+				border:2px solid navy;
+				animation-name: mudaFundo;
+				animation-duration: 20s;
+				animation-fill-mode: forwards;
+				overflow:hidden;
+			}
+			#dalmata {
+				position:relative;
+				top:430px;
+				animation-name: corrida;
+				animation-duration: 30s;
+				animation-fill-mode: forwards;
+			}
+			@keyframes corrida {
+			  from {left: 0px;}
+			  to {left: 110%;}
+			}
+			@keyframes mudaFundo {
+			  from {background-position: 1000px 0px;background-image:url(imgs/cidade3.png);}
+			  to {background-position: 0px 0px;background-image:url(imgs/cidade3.png),url(imgs/ceu3.jpg);}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="ambiente">
+			<img id="dalmata" width="30px;" src="imgs/dalmata.gif">
+		</div>
+	</body>
+</html>
+

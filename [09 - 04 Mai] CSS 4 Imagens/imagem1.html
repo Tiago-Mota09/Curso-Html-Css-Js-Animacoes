@@ -1,0 +1,34 @@
+<html> <!-- salvar como imagem1.html -->
+	<head>
+		<title>CSS - Imagem</title>
+		<style>
+			body {
+				background:url(imgs/fundo1.jpg);
+				background-size:cover;
+			}
+			.caixa {
+				width:300px;
+				height:300px;
+				border:2px solid black;
+				background-color:pink;
+				float:left;
+				margin:10px;
+			}
+			#rosto1 { 
+				background:lightgreen url(imgs/rosto1.png);
+			}
+			#rosto2 {
+				background:lightgreen url(imgs/rosto2.png) no-repeat bottom left;
+			}
+			#rosto3 {
+						background:lightgreen url(imgs/rosto3.png);
+						background-size: cover;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="caixa" id="rosto1">A</div>
+		<div class="caixa" id="rosto2">B</div>
+		<div class="caixa" id="rosto3">C</div>
+	</body>
+</html>

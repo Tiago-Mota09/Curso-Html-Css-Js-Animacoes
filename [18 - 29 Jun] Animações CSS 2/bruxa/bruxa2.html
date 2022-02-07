@@ -1,0 +1,208 @@
+<html>
+	<head>
+		<title>CSS</title>
+		<script>
+			function Tocar()
+			{
+				document.getElementById('musica').play();
+				document.getElementById('b1').style.display="none";
+			}
+			function Risada()
+			{
+				document.getElementById('risada').play();
+			}
+		</script>
+		<style>
+			body {
+				background:#11002B url(imgs/fundo2.png);
+				animation-name: fundo;
+				animation-duration: 120s;
+				animation-iteration-count:infinite;
+				animation-fill-mode: forwards;
+			}
+			
+			#nuvens {
+				position:relative;
+				top:0px;
+				left:-2000px;
+				animation-name: nuvens;
+				animation-duration: 120s;
+				animation-iteration-count:infinite;
+				animation-fill-mode: forwards;
+				z-index:2;
+			}
+			#lua {
+				position:absolute;
+				top:50px;
+				left:1200px;
+				z-index:1;
+				animation-name: lua;
+				animation-duration: 150s;
+				animation-fill-mode: forwards;
+			}
+			#bruxa {
+				position:absolute;
+				top:500px;
+				left:-400px;
+				animation-name: bruxa;
+				animation-duration: 90s;
+				animation-fill-mode: forwards;
+				z-index:5;
+			}
+			#morcego1 {
+				position:absolute;
+				top:400px;
+				left:-10px;
+				animation-name: morcego1;
+				animation-duration: 90s;
+				animation-fill-mode: forwards;
+				z-index:3;
+			}
+			#morcego2 {
+				position:absolute;
+				top:0px;
+				left:1280px;
+				animation-name: morcego2;
+				animation-duration: 90s;
+				animation-fill-mode: forwards;
+				z-index:3;
+			}
+			#fantasma {
+				position:absolute;
+				top:380px;
+				left:420px;
+				width:30px;
+				animation-name: fantasma;
+				animation-duration: 90s;
+				animation-fill-mode: forwards;
+				z-index:3;
+			}
+			
+			@font-face {
+				font-family:BlackWidow;
+				src:url('fonts/BlackWidow.ttf') format('truetype');
+				font-weight: normal;
+				font-style: normal;
+			}
+			@font-face {
+				font-family:Ghost Reverie;
+				src:url('fonts/Ghostreverie-aL25.ttf') format('truetype');
+				font-weight: normal;
+				font-style: normal;
+			}
+			@font-face {
+				font-family:Kreepshow Frigid;
+				src:url('fonts/Kreepshow Frigid.ttf') format('truetype');
+				font-weight: normal;
+				font-style: normal;
+			}
+			@font-face {
+				font-family:Riky Vampdator Normal;
+				src:url('fonts/RIKY2vamp.ttf') format('truetype');
+				font-weight: normal;
+				font-style: normal;
+			}
+			
+			#painel {
+				position:absolute;
+				top:150px;
+				left:1200px;
+				width:250px;
+				height:480px;
+				padding:10px;
+				border:2px outset fuchsia;
+				background-color:rgba(20,0,0,.5);
+				text-align:center
+				font-family:Ghost Reverie;
+				font-size:22px;
+				color:white;
+				z-index:3;
+			}
+			
+			#painel h3 {
+				font-family:Kreepshow Frigid;
+				font-size:40px;
+				color:red;
+				text-align:center;
+			}
+			#painel p {
+				font-family:Riky Vampdator Normal;
+				font-size:16px;
+				color:white;
+			}
+			#painel cite {
+				font-family:arial;
+				font-size:12px;
+				color:white;
+			}
+			@keyframes fundo {
+			  from {background-color:#11002B;}
+			  to {background-color:gray;}
+			}
+			@keyframes nuvens {
+			  from {left: -2000px;}
+			  to {left: 2500px;}
+			}
+			@keyframes morcego1 {
+			  from {left: 0px;top:400px;}
+			  to {left: 1200px;top:300px;}
+			}
+			@keyframes morcego2 {
+			  from {left: 1280px;top:0px;}
+			  to {left: 100px;tp:550px;}
+			}
+			@keyframes bruxa {
+			  0%   {top: 200px; left:-400px;width:80px;}
+			  25%  {top: 300px; left:300px;width:120px;}
+			  50%  {top: 450px; left:550px;width:160px;}
+			  65%  {top: 380px; left:700px;width:220px;}
+			  75%  {top: 220px; left:1000px;width:150px;}
+			  100% {top: -250px; left:2890px;width:500px;}
+			}
+			@keyframes fantasma {
+			  0%   {top: 580px; left:520px;width:50px;}
+			  55%  {top: 680px; left:700px;width:60px;}
+			  75%  {top: 800px; left:1000px;width:80px;}
+			  100% {top: 600px; left:1400px;width:60px;}
+			}		
+			@keyframes lua {
+			  from {opacity:0.3; width:100px;top:50px;left:1200px;}
+			  to {opacity:1; width:200px;top:40px;left:1300px;}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="ambiente">
+			<div id="painel">
+				<h3>Halloween</h3>
+				<p>Dia das Bruxas (em inglês: Halloween, pronuncia-se [hæl??'i?n], ou também [hælo?'i?n][1]) é uma celebração 
+				observada em vários países, principalmente no mundo anglófono, em 31 de outubro, véspera da festa cristã ocidental do Dia de 
+				Todos os Santos. Ela começa com a vigília de três dias do Allhallowtide,[2] o tempo do ano litúrgico dedicado a lembrar os mortos, 
+				incluindo santos (hallows), mártires e todos os fiéis falecidos.</p>
+				<hr>
+				<cite>
+				DIA DAS BRUXAS. In: WIKIPÉDIA, a enciclopédia livre. Flórida: Wikimedia Foundation, 2020. Disponível em: <https://pt.wikipedia.org/w/index.php?title=Dia_das_Bruxas&oldid=57573900>. Acesso em: 26 fev. 2020.
+				</cite>
+			</div>
+			<img id="nuvens" src="imgs/nuvens.png">
+			<img id="lua" src="imgs/lua2.png" width="50">
+			<img id="bruxa" src="imgs/bruxa2.gif" width="50" onmouseover="Risada()">
+			<img id="morcego1" src="imgs/morcego1.gif" width="50">
+			<img id="morcego2" src="imgs/morcego2.gif" width="50">
+			<img id="fantasma" src="imgs/fantasma.gif" width="50">
+		</div>
+		<audio autoplay id="musica">
+			<source src="audio/bruxa.mp3" type="audio/mpeg">
+			<source src="audio/bruxa.wav" type="audio/wav">
+			Áudio não suportado
+		</audio>
+		
+		<audio autoplay id="risada">
+			<source src="audio/cackle4.wav" type="audio/wav">
+			Áudio não suportado
+		</audio>
+		
+		<input id="b1" type="button" value="Acionar música" onclick="Tocar()">		
+		
+	</body>
+</html>

@@ -1,0 +1,105 @@
+<html>
+	<head>
+		<script>
+			function Animar()
+			{
+				// Aqui vai o código da função JavaScript Animar()
+				document.getElementById("musica").play()
+				document.getElementById("peixeAzul").className="peixeAzul"
+				document.getElementById("peixeComprido").className="peixeComprido"
+				document.getElementById("peixeAmarelo").className="peixeAmarelo"
+				document.getElementById("polvo").className="polvo"
+				document.getElementById("tubarao").className="tubarao"
+			}
+		</script>
+		
+		
+		<title>CSS</title>
+		<style>
+			body {
+				background:url(imgs/fundo.jpg);
+				background-size:cover;
+			}
+			.escondida {
+				position:relative;
+				left:-1500px;
+			}
+			.peixeAzul {
+			  position: relative;
+			  width: 80px;
+			  animation-name: peixeAzul;
+			  animation-duration: 30s;
+			  animation-fill-mode: forwards;
+			}
+			@keyframes peixeAzul {
+			  0%   {top: 0px; left:0px;}
+			  25%  {top: 480px; left:1220px;}
+			  100% {top: -200px; left:-200px;}
+			}
+			.peixeComprido {
+			  position: relative;
+			  width: 80px;
+			  animation-name: peixeComprido;
+			  animation-duration: 30s;
+			  animation-fill-mode: forwards;
+			}
+			@keyframes peixeComprido {
+			  from {left: 1920px;top:400px;}
+			  to {left: -200px;top:-200px;}
+			}
+			.peixeAmarelo {
+			  position: relative;
+			  width: 80px;
+			  animation-name: peixeAmarelo;
+			  animation-duration: 30s;
+			  animation-fill-mode: forwards;
+			}
+			@keyframes peixeAmarelo {
+			  from {left: 1720px;top:400px;}
+			  to {left: -200px;top:-300px;}
+			}
+			.polvo {
+			  position: relative;
+			  width: 80px;
+			  animation-name: polvo;
+			  animation-duration:30s;
+			  animation-fill-mode: forwards;
+			}
+			@keyframes polvo {
+			  from {left: 1020px;top:500px;}
+			  to {left: -120px;top:-300px;}
+			}
+			.tubarao {
+			  position: relative;
+			  width: px;
+			  animation-name: tubarao;
+			  animation-duration: 30s;
+			  animation-fill-mode: forwards;
+			}
+			@keyframes tubarao {
+			  0%   {top: 0px; left:1720px;width:100px;}
+			  25%  {top: 120px; left:1080px;width:120px;}
+			  50%  {top: 200px; left:600px;width:160px;}
+			  65%  {top: 130px; left:490px;width:220px;}
+			  75%  {top: 0px; left:200px;width:330px;}
+			  100% {top: -250px; left:-250px;width:500px;}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="areaEscondida">
+			<img id="peixeAzul" class="escondida" src="imgs/peixeAzul.png">
+			<img id="peixeComprido" class="escondida" src="imgs/peixeComprido.png">
+			<img id="peixeAmarelo" class="escondida" src="imgs/peixeAmarelo.png">
+			<img id="polvo" class="escondida" src="imgs/polvo.png">
+			<img id="tubarao" class="escondida" src="imgs/tubarao.png">
+		</div>
+		<audio autoplay id="musica">
+			<source src="audio/score.wav" type="audio/wav">
+			<source src="audio/score.ogg" type="audio/ogg">
+			<source src="audio/score.mp3" type="audio/mpeg">
+			Áudio não suportado
+		</audio>
+		<input id="b1" type="button" value="Animar" onclick="Animar()">
+	</body>
+</html>

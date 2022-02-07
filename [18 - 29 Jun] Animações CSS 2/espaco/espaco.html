@@ -1,0 +1,106 @@
+<html>
+	<head>
+	
+		<title>CSS</title>
+		
+		<script>
+			// estamos no JavaScript
+			function Iniciar()
+			{
+				// código da função
+				// alert("Estou na função Iniciar()")
+				document.getElementById("musica").play()
+				document.getElementById("enterprise").className="enterprise"
+				document.getElementById("ovni1").className="ovni1"
+				document.getElementById("people").className="people"
+				document.getElementById("id").className="escondida"
+			}
+		</script>
+		
+		<style>
+			body {
+				background:url(imgs/espaco.jpg);
+				background-size:cover;
+			}
+			.escondida {
+				position:relative;
+				top:-2000px;
+				left:-2000px;
+			}
+			.enterprise {
+			  position: relative;
+			  left: -400px;
+			  top:0px;
+			  width: 200px;
+			  animation-name: enterprise;
+			  animation-duration: 49s;
+			}
+			@keyframes enterprise {
+				0% {
+					left: -400px;
+					top:0px;
+					width:200px;
+				}
+				95% {
+					left: 600px;
+					top:300px;
+					width:400px;
+				}
+				100% {
+					left: 1900px;
+					top:-1000px;
+					width:0px;
+				}
+			}
+			
+			.ovni1 {
+			  animation-delay: 30s;
+			  position: relative;
+			  left: -250px;
+			  top:-250px;
+			  width: 50px;
+			  animation-name: ovni1;
+			  animation-duration: 20s;
+			}
+			
+			.people {
+			  position: relative;
+			  width: 80px;
+			  left: -500px;
+			  top:100px;
+			  animation-delay: 25s;
+			  animation-name: people;
+			  animation-duration: 25s;
+			}
+			@keyframes ovni1 {
+			  from {left: -250px;top:-250px;}
+			  to {left: 2020px;top:312px;}
+			}
+			@keyframes people {
+			  from {left: -500px;width:80px;top:100px;}
+			  to {left: 2020px;width:400px;top:600px;}
+			}
+			
+			#topo {
+			  width:100%;
+			  overflow:hidden;
+			  height:100%;
+			}
+		</style>
+	</head>
+	<body>
+		<input id="b1" type="button" value="Iniciar" onclick="Iniciar()">
+		<div id="topo">
+			<img class="escondida" id="enterprise" src="imgs/enterprise.png">
+			<img class="escondida" id="ovni1" src="imgs/ovni1.png">
+			<img class="escondida" id="people" src="imgs/ovni2.png">
+			
+			<audio id="musica">
+				<source src="audio/Opening_Remastered.wav" type="audio/wav">
+				<source src="audio/Opening_Remastered.ogg" type="audio/ogg">
+				<source src="audio/Opening_Remastered.mp3" type="audio/mpeg">
+				Áudio não suportado
+			</audio>
+		</div>
+	</body>
+</html>

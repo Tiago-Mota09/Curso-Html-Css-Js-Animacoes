@@ -1,0 +1,35 @@
+<html> <!-- salvar como aviao.html -->
+	<head>
+		<title>Animação CSS</title>
+
+		<style>
+			body {
+				background:black url(imgs/fundo.png);
+			}
+			
+			
+			#aviao {
+				position:relative;
+				animation-name: animar;
+				animation-duration:15s;
+				animation-fill-mode:forwards;
+			}
+			@keyframes animar {
+				0%   {top: 0px; left:0px;width:50px;height:50px;transform:rotate(0deg);}
+				15%  {transform:rotate(90deg);}
+				100%  {top: 0px; left:2020px;width:50px;transform:rotate(90deg);}
+			}
+			#ambiente {
+				width:90%;
+				overflow:hidden;
+				
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="ambiente">
+			<img id="aviao" src="imgs/aviao1.png" width="50px">
+		</div>
+	</body>
+</html>

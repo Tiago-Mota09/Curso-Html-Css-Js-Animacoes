@@ -1,0 +1,35 @@
+<html>  <!-- salvar como aviao.html -->
+	<head>
+		<title>CSS</title>
+		<style>
+			body {
+				background:url(imgs/fundo.jpg);
+				background-size:cover;
+			}
+			.aviao {
+			  position: relative;
+			  width: 400px;
+			  animation-name: voarDireita;
+			  animation-duration: 12s;
+			}
+			@keyframes voarDireita {
+				from {
+						left: 0px;
+						top:0px;
+						width:400px;
+				}
+
+				to {	
+						left: 2020px; 
+						top:600px;
+						width:80px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="topo">
+			<img class="aviao" src="imgs/aviao.png">
+		</div>
+	</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Responsibidade</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+		#textoAzul {display:none;}
+		
+		/* Extra small devices (phones, 600px and down) */
+		@media only screen and (max-width: 600px) {
+		  #imgTigre{ display:none;}
+		  body {
+			background: red;
+			color:white;
+			font-size:12px;
+		  }
+		  h1, #bengala { display:none;}
+		  #aviso, #aviso h1 {
+			display:block;
+			font-size:18px;
+		  }
+		}
+
+		/* Small devices (portrait tablets and large phones, 600px and up) */
+		@media only screen and (min-width: 600px) {
+		  body  {
+			background: green;
+			color:black;
+			font-size:14px;
+			font-family:Arial;
+		  }
+		  #aviso { display:none;}
+		}
+
+		/* Medium devices (landscape tablets, 768px and up) */
+		@media only screen and (min-width: 768px) {
+		  #textoAzul{display:block;}
+		  body  {
+			background: blue;
+			color:yellow;
+			font-size:18px;
+			font-family:Courier New;
+			}
+			#bengala,#aviso { display:none;}
+		} 
+
+		/* Large devices (laptops/desktops, 992px and up) */
+		@media only screen and (min-width: 992px) {
+		  #textoAzul{display:none;}
+		  body {
+			background: orange;
+			color:black;
+			font-size:20px;
+			font-family:Tahoma;
+		  }
+		  #bengala,#aviso { display:none;}
+		} 
+
+		/* Extra large devices (large laptops and desktops, 1200px and up) */
+		@media only screen and (min-width: 1200px) {
+		  body  {
+			background:url(imgs/tigre1920.jpg);
+			background-size:cover;
+			color:white;
+			font-size:24px;
+			font-family:Comic Sans MS;
+			}
+			#bengala { display:block;}
+		    #aviso { display:none;}
+			#imgTigre{ display:none;}
+		}
+		</style>
+	</head>
+	<body>
+		<h1>Os Felinos</h1>
+		<div id="bengala">
+			O tigre-de-bengala, também conhecido como tigre-indiano, é um grande felino e uma das 6 
+			subespécies de tigre restantes, sendo a segunda maior entre elas, ficando atrás apenas do 
+			tigre-siberiano. Seu nome deve-se à sua presença em Bengala ocidental, próxima 
+			ao Golfo de Bengala. <br>
+			Fonte: <a href="https://pt.wikipedia.org/wiki/Tigre-de-bengala" target="_blank"> Wikipédia</a>
+		</div>
+		
+		<img id="imgTigre" src="imgs/tigre2.png" width="200">
+		<div id="textoAzul">
+			Este texto deve ser exibido na tela quando ficar azul.
+		</div>
+		<div id="aviso">
+			<h1>AVISO</h1>
+			Infelizmente a resolução de seu dispositivo não é suportada pelo nosso site.<br>
+			Tente abrir o mesmo num tamanho de tela maior.
+		</div>
+	</body>
+</html>

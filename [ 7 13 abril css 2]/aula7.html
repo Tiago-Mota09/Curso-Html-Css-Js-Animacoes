@@ -1,0 +1,64 @@
+<html> <!-- salvar como index.html 
+			na pasta [07 – 13 Abr] CSS 2 -->
+	<head>
+		<title>Layout Web 2</title>
+		<style>
+			
+			div { 
+				border : 1px solid black;
+			}
+			#principal {
+				width : 1024px;
+				
+				margin:0px auto;
+				border:none;
+			}
+			
+			#cabecalho {
+				background-color : rgb(255,242,204);
+				height: 150px;
+				margin-bottom:10px;
+			}
+			
+			#lateralEsquerda {
+				background-color : #DEEBF7;
+				height:400px;
+				width : 150px;
+				float: left;
+				margin-right :10px;
+			}
+			#conteudo {
+				background-color: #E2F0D9;
+				height:400px;
+				width:860px;
+				float:left;
+				margin-bottom:10px;
+			}
+			#rodape {
+				background-color: silver;
+				height:80px;
+				clear : both;
+			}
+			body{
+				background:url(imgs/fundo.jpg);
+				background-size:cover;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="principal">
+			<div id="cabecalho">
+				CABEÇALHO
+			</div>
+			<div id="lateralEsquerda">
+				LATERAL ESQUERDA
+			</div>
+			<div id="conteudo">
+				CONTEÚDO
+			</div>
+			<div id="rodape">
+				RODAPÉ
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>CSS</title>
+		<style>
+			body {
+				background-color:lightblue;
+			}
+			#ambiente {
+				width:500px;
+				height:500px;
+				background:url(imgs/fundo.png) no-repeat;
+				border:2px solid navy;
+				animation-name: mudaFundo;
+				animation-duration: 20s;
+				animation-fill-mode: forwards;
+				overflow:hidden;
+			}
+			#foguete {
+				position:relative;
+				top:430px;
+				animation-name: voar;
+				animation-duration: 20s;
+				animation-fill-mode: forwards;
+			}
+			@keyframes voar {
+			  from {left: 0px;top:600px;width:70px;transform: rotate(0deg);}
+			  to {left: 110%;top:-120px; width:0px;transform: rotate(50deg);}
+			}
+			@keyframes mudaFundo {
+			  from {background-position: 0px -790px;}
+			  to {background-position: 0px 0px;}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="ambiente">
+			<img id="foguete" width="40px;" src="imgs/foguete2.png">
+		</div>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>  <!-- salvar na pasta aviao2 como aviao.html -->
+<html>
+	<head>
+		<title>CSS</title>
+		<style>
+		body {
+				background:url(imgs/pista2.jpg);
+				background-size:cover;
+			}
+			#aviao{
+				position:relative;
+				top:300px;
+				left:420px;
+				animation-name: aviao ;
+				animation-duration: 20s;
+				animation-fill-mode: forwards;
+			}
+			@keyframes aviao {
+				from {
+					top: 300px; 
+					left:420px;
+					width:1250px;
+				}
+				to {
+					top: -200px; 
+					left:500px;
+					width:200px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<img id="aviao" src="imgs/aviao.png">
+	</body>
+</html>
